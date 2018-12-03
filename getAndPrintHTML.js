@@ -4,7 +4,7 @@ function getAndPrintHTML () {
 
   var requestOptions = {
     host: 'sytantris.github.io',
-    path: '/http-examples/step1.html'
+    path: '/http-examples/step2.html'
   };
 
   /* Add your code here */
@@ -14,7 +14,7 @@ function getAndPrintHTML () {
     // set encoding of received data to UTF-8
     response.setEncoding('utf8');
 
-    // the callback is invoked when a `data` chunk is received
+    // the callback is invoked when a `data` chunk is received & append the data chunk
     response.on('data', function (data) {
       theData = theData + data;
     });
